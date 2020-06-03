@@ -12,9 +12,13 @@
 </script>
 	<p>this is test8.</p>
 <form action="" method="get">
-<input type="text" name="id"><br><br>
-<input type="password" name="pw"><br><br>
-　<input type="submit" value="送出表單">
+	<label for="phone">your name :</label><br><br>
+	<input type="text" name="id" /><br><br>
+	<label for="phone">your password:(8 digits)</label><br><br>
+	<input type="password" pattern="[a-zA-Z0-9]{8,}"><br><br>
+	<label for="phone">your phone number:</label><br><br>
+	<input type="tel" id="phone" name="phone" placeholder="0912-123123" pattern="[0-9]{7}-[0-9]{6}"><br><br>
+　	<input type="submit" value="送出表單">
 </form>
 </form>
  
